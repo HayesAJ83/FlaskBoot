@@ -31,17 +31,27 @@
         <link href="/static/assets/css/theme.css" rel="stylesheet">
     </head>
 
+
     <body>
+        <!-- Preloader -->
+        <div class="preloader">
+            <div class="spinner">
+                <div class="circles"></div>
+            </div>
+        </div>
+        <!-- End of Preloader -->
+
+
         <!-- Header -->
-        <header class="spyre-navbar navbar navbar-expand-lg bg-secondary fixed-top align-items-center" data-transparent data-text-color="#ffffff">
+        <header class="spyre-navbar navbar navbar-expand-lg bg-secondary navbar-dark fixed-top align-items-center" data-transparent data-text-color="#ffffff">
             <div class="container">
                 <a class="navbar-brand mr-lg-5 mr-xl-7" href="../pages/index.html">
                     <img src="/static/assets/img/logo.svg" class="d-none d-lg-block" alt="Spyre" width="183" />
                     <img src="/static/assets/img/logo.svg" class="d-block d-lg-none" alt="Spyre" width="150" />
                 </a>
 
-                <span class="navbar-text flex-fill d-none d-md-inline-block">
-                    Contact us: <a href="#" class="pl-2">surgicalnames@gmail.com</a>
+                <span class="navbar-text flex-fill d-none d-md-inline-block text-white">
+                    Contact us: <a href="#" class="pl-2 text-white">info@spyre.com</a><a href="#" class="pl-5 text-white">+1-202-555-0149</a>
                 </span>
 
                 <div class="search d-none d-lg-flex justify-content-end ml-auto mr-2">
@@ -73,14 +83,22 @@
                                     <li class="spyre-nav-item dropdown">
                                         <a href="#" class="spyre-nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <li class="dropdown-menu-item active"><a href="/static/pages/home.html" class="dropdown-menu-link">Homepage</a></li>
+                                            <li class="dropdown-menu-item"><a href="/static/pages/home.html" class="dropdown-menu-link">Homepage</a></li>
                                             <li class="dropdown-menu-item"><a href="/static/pages/services.html" class="dropdown-menu-link">Services</a></li>
+                                            <li class="dropdown-menu-item"><a href="/static/pages/blog.html" class="dropdown-menu-link">Blog</a></li>
+                                            <li class="dropdown-menu-item"><a href="/static/pages/blog-single.html" class="dropdown-menu-link">Blog single</a></li>
                                             <li class="dropdown-menu-item"><a href="/static/pages/portfolio.html" class="dropdown-menu-link">Portfolio</a></li>
                                             <li class="dropdown-menu-item"><a href="/static/pages/about.html" class="dropdown-menu-link">About</a></li>
                                             <li class="dropdown-menu-item"><a href="/static/pages/contact.html" class="dropdown-menu-link">Contact</a></li>
                                             <li class="dropdown-menu-item"><a href="/static/pages/team.html" class="dropdown-menu-link">Team</a></li>
                                             <li class="dropdown-menu-item"><a href="/static/pages/faq.html" class="dropdown-menu-link">Faq</a></li>
+                                            <li class="dropdown-menu-item"><a href="/static/pages/pricing.html" class="dropdown-menu-link">Pricing</a></li>
+                                            <li class="dropdown-menu-item"><a href="/static/pages/careers.html" class="dropdown-menu-link">Careers</a></li>
+                                            <li class="dropdown-menu-item"><a href="/static/pages/careers-single.html" class="dropdown-menu-link">Careers single</a></li>
                                             <li class="dropdown-menu-item"><a href="/static/pages/coming-soon.html" class="dropdown-menu-link">Coming soon</a></li>
+                                            <li class="dropdown-menu-item"><a href="/static/pages/404.html" class="dropdown-menu-link">404</a></li>
+                                            <li class="dropdown-menu-item"><a href="/static/pages/sign-in.html" class="dropdown-menu-link">Sign In</a></li>
+                                            <li class="dropdown-menu-item"><a href="/static/pages/sign-up.html" class="dropdown-menu-link">Sing Up</a></li>
                                             <li class="dropdown-menu-item"><a href="/static/pages/recover-account.html" class="dropdown-menu-link">Recover account</a></li>
                                         </ul>
                                     </li>
@@ -172,43 +190,101 @@
 
         <!-- Main Content -->
         <main class="main minh-100vh">
-        <!-- Section -->
-        <section class="py-0">
-            <div class="container">
-                <div class="row position-relative">
-                    <div class="col-lg-8 minh-100vh col-xl-7 bg-white pt-10 pt-lg-7 pb-6 pb-lg-3">
-                        <div class="row align-items-center h-100">
-                            <div class="col-lg-10 pb-3">
-                                <h1 class="fs-3 fs-lg-5 title-underline mb-5 pb-3">Search full database</h1>
-                                <p class="mb-7">Text.</p>
+            <!-- Section -->
+            <section class="py-0 overflow-hidden text-center">
+                <div class="bg-container overlay overlay-60 parallax" data-rellax-percentage="0.5" style="background-image: url(../assets/img/backgrounds/bg-15.jpg)"></div>
+                <div class="container">
+                    <div class="row h-100vh justify-content-center align-items-center">
+                        <div class="col-lg-8">
+                            <h1 class="text-white text-uppercase fs-5 fs-lg-7" data-aos="fade-down" data-aos-duration="1000">Spyre</h1>
+                            <p class="mb-5 fs-lg-1 text-white" data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000">Slick contemporary multipurpose theme</p>
+                            <div class="row justify-content-center">
+                                <div class="col-auto">
+                                    <a href="#section-4" class="btn btn-primary mx-2 px-5 mb-3" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000" data-smooth-scroll data-smooth-scroll-hash="false">Explore Demos</a>
+                                </div>
+                                <div class="col-auto">
+                                    <a href="https://themes.getbootstrap.com/product/spyre-slick-contemporary-multipurpose-theme/" target="_blank" class="btn btn-light px-5 mx-2" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000">Purchase Now<i class="zmdi zmdi-long-arrow-right ml-2"></i></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-lg-4 col-xl-5 bg-secondary ext-r pt-0 pt-lg-7 pb-1 pb-lg-3">
-                        <div class="d-flex h-100 align-items-center ml-lg-neg-7 release-container unrelease-lg-container">
-                            <!-- Carousel -->
-                            <div class="owl-carousel" data-carousel-options='{"items":1,"loop":true,"responsive":{"0":{"dots":true,"nav":false},"992":{"dots":false,"nav":true}}}'>
-                                <div><img src="/static/assets/img/img-01.jpg" class="img-fluid w-100" alt="" /></div>
-                                <div><img src="/static/assets/img/img-02.jpg" class="img-fluid w-100" alt="" /></div>
-                                <div><img src="/static/assets/img/img-03.jpg" class="img-fluid w-100" alt="" /></div>
-                                <div><img src="/static/assets/img/img-04.jpg" class="img-fluid w-100" alt="" /></div>
-                                <div><img src="/static/assets/img/img-05.jpg" class="img-fluid w-100" alt="" /></div>
-                            </div>
-                            <!-- End of Carousel -->
+                        <div class="move d-none d-lg-block">
+                            <a href="#section-2" class="text-white" data-smooth-scroll data-smooth-scroll-hash="false">
+                                <i class="zmdi zmdi-long-arrow-down zmdi-hc-2x"></i>
+                            </a>
                         </div>
-                    </div>
-
-                    <div class="move d-none d-lg-block">
-                        <a href="#section-2" data-smooth-scroll data-smooth-scroll-hash="false">
-                            <i class="zmdi zmdi-long-arrow-down zmdi-hc-2x"></i>
-                        </a>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- End of Section -->
+            </section>
+            <!-- End of Section -->
 
+            <!-- Section -->
+            <section id="section-2">
+                <div class="container text-center">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <h3 class="my-0 fs-1 fw-medium text-primary text-uppercase">Check out</h3>
+                            <h2 class="mb-5 fw-medium text-secondary text-uppercase">Main Features</h2>
+                            <p>Spyre is a fully responsive contemporary theme that offers maximum flexibility in the creation of visually engaging and highly legible page layouts.</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="row justify-content-center text-center mt-6">
+                                <div class="col-6 col-md-4 col-lg-3 mb-5 mb-md-6 px-4 px-lg-5">
+                                    <div class="mb-3 p-1 d-flex square rounded-circle bg-blue-light" data-aos="flip-right" data-aos-duration="1000">
+                                        <i class="fas fa-mobile-alt fs-2 fs-md-3 fs-xl-4 d-flex align-self-center mx-auto text-secondary"></i>
+                                    </div>
+                                    <h6 class="text-uppercase" data-aos="zoom-in" data-aos-duration="1000">Fully Responsive</h6>
+                                </div>
+        
+                                <div class="col-6 col-md-4 col-lg-3 mb-5 mb-md-6 px-4 px-lg-5">
+                                    <div class="mb-3 p-1 d-flex square rounded-circle bg-blue-light" data-aos="flip-right" data-aos-delay="50" data-aos-duration="1000">
+                                        <i class="fab fa-twitter fs-2 fs-md-3 fs-xl-4 d-flex align-self-center mx-auto text-secondary"></i>
+                                    </div>
+                                    <h6 class="text-uppercase" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000">Latest Bootstrap</h6>
+                                </div>
+        
+                                <div class="col-6 col-md-4 col-lg-3 mb-5 mb-md-6 px-4 px-lg-5">
+                                    <div class="mb-3 p-1 d-flex square rounded-circle bg-blue-light" data-aos="flip-right" data-aos-delay="100" data-aos-duration="1000">
+                                        <i class="fas fa-layer-group fs-2 fs-md-3 fs-xl-4 d-flex align-self-center mx-auto text-secondary"></i>
+                                    </div>
+                                    <h6 class="text-uppercase" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">100% Customizable</h6>
+                                </div>
+        
+                                <div class="col-6 col-md-4 col-lg-3 mb-5 mb-md-6 px-4 px-lg-5">
+                                    <div class="mb-3 p-1 d-flex square rounded-circle bg-blue-light" data-aos="flip-right" data-aos-delay="150" data-aos-duration="1000">
+                                        <i class="fab fa-sass fs-2 fs-md-3 fs-xl-4 d-flex align-self-center mx-auto text-secondary"></i>
+                                    </div>
+                                    <h6 class="text-uppercase" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="1000">Built with Sass</h6>
+                                </div>
+        
+                                <div class="col-6 col-md-4 col-lg-3 mb-5 mb-md-0 px-4 px-lg-5">
+                                    <div class="mb-3 p-1 d-flex square rounded-circle bg-blue-light" data-aos="flip-right" data-aos-delay="200" data-aos-duration="1000">
+                                        <i class="fab fa-css3 fs-2 fs-md-3 fs-xl-4 d-flex align-self-center mx-auto text-secondary"></i>
+                                    </div>
+                                    <h6 class="text-uppercase" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">Interactive Animations</h6>
+                                </div>
+        
+                                <div class="col-6 col-md-4 col-lg-3 mb-5 mb-md-0 px-4 px-lg-5">
+                                    <div class="mb-3 p-1 d-flex square rounded-circle bg-blue-light" data-aos="flip-right" data-aos-delay="250" data-aos-duration="1000">
+                                        <i class="fas fa-code fs-2 fs-md-3 fs-xl-4 d-flex align-self-center mx-auto text-secondary"></i>
+                                    </div>
+                                    <h6 class="text-uppercase" data-aos="zoom-in" data-aos-delay="250" data-aos-duration="1000">Powerful Scripts</h6>
+                                </div>
+        
+                                <div class="col-6 col-md-4 col-lg-3 mb-0 px-4 px-lg-5">
+                                    <div class="mb-3 p-1 d-flex square rounded-circle bg-blue-light" data-aos="flip-right" data-aos-delay="300" data-aos-duration="1000">
+                                        <i class="far fa-clone fs-2 fs-md-3 fs-xl-4 d-flex align-self-center mx-auto text-secondary"></i>
+                                    </div>
+                                    <h6 class="text-uppercase" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000">Cross Browser</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of Section -->
         </main>
         <!-- End of Main Content -->
 
