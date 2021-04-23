@@ -28,12 +28,28 @@
         
         <!-- Theme Stylesheets -->
         <link href="/static/assets/css/theme.css" rel="stylesheet">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129313359-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-129313359-1');
+        </script>
     </head>
-    
+
     <body>
         <!-- Preloader -->
+        <div class="preloader">
+            <div class="spinner">
+                <div class="circles"></div>
+            </div>
+        </div>
         <!-- End of Preloader -->
-
+    
+        
         <!-- Header -->
         <header class="spyre-navbar navbar navbar-expand-lg bg-secondary navbar-dark fixed-top align-items-center" data-transparent data-text-color="#ffffff">
             <div class="container">
@@ -41,10 +57,6 @@
                     <img src="/static/assets/img/logo.svg" class="d-none d-lg-block" alt="Spyre" width="183" />
                     <img src="/static/assets/img/logo.svg" class="d-block d-lg-none" alt="Spyre" width="150" />
                 </a>
-
-                <span class="navbar-text flex-fill d-none d-md-inline-block text-white">
-                    Contact us: <a href="#" class="pl-2 text-white">surgicalnames@gmail.com</a>
-                </span>
 
                 <div class="search d-none d-lg-flex justify-content-end ml-auto mr-2">
                     <input class="form-control mr-2" type="text">
@@ -77,8 +89,6 @@
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                             <li class="dropdown-menu-item"><a href="/static/pages/index.html" class="dropdown-menu-link">Homepage</a></li>
                                             <li class="dropdown-menu-item"><a href="/static/pages/services.html" class="dropdown-menu-link">Services</a></li>
-                                            <li class="dropdown-menu-item"><a href="/static/pages/blog.html" class="dropdown-menu-link">Blog</a></li>
-                                            <li class="dropdown-menu-item"><a href="/static/pages/blog-single.html" class="dropdown-menu-link">Blog single</a></li>
                                             <li class="dropdown-menu-item"><a href="/static/pages/portfolio.html" class="dropdown-menu-link">Portfolio</a></li>
                                             <li class="dropdown-menu-item"><a href="/static/pages/about.html" class="dropdown-menu-link">About</a></li>
                                             <li class="dropdown-menu-item"><a href="/static/pages/contact.html" class="dropdown-menu-link">Contact</a></li>
@@ -136,22 +146,7 @@
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link px-2" href="#" target="_blank">
-                                                <i class="zmdi zmdi-instagram text-white"></i>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link px-2" href="#" target="_blank">
                                                 <i class="zmdi zmdi-facebook-box text-white"></i>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link px-2" href="#" target="_blank">
-                                                <i class="zmdi zmdi-pinterest text-white"></i>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link px-2" href="#" target="_blank">
-                                                <i class="zmdi zmdi-flickr text-white"></i>
                                             </a>
                                         </li>
                                         <li class="nav-item">
