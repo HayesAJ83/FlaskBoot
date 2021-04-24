@@ -173,12 +173,19 @@
             <!-- End of Section -->
 
             <!-- Section -->
+            { extends 'A2Z'.html %}
+            {% block header %}
+                <h1>{% block title%}Register{% endblock %}</h1>
+            {% endblock %}
+       
             <section class="pb-0">
                 <div class="container">
                     <div class="row justify-content-between">
                         <div class="col-lg-6 mb-7 mb-lg-0">
-                            <h3 class="my-0 fs-1 fw-medium text-secondary text-uppercase">Step 1: Choose specialties</h3>
-                            <h3 class="my-0 fs-1 fw-medium text-secondary text-uppercase">Step 2: Define a time window</h3>
+                            <p class="fs-0 fs-lg-1 text-black">Choose specialty</p>
+                            <p></p>
+                            <h3 class="my-0 fs-1 fw-medium text-secondary text-uppercase">1) Choose specialties</h3>
+                            <h3 class="my-0 fs-1 fw-medium text-secondary text-uppercase">2) Define a time window</h3>
                             <h2 class="mb-5 fw-medium text-primary text-uppercase">The company</h2>
                             <p class="mb-4">Lorem</p>
                         </div>
