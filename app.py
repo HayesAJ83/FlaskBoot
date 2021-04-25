@@ -15,7 +15,7 @@ def index():
 #    table = df2['Eponym_easy']
 #    return render_template('A2Z_1.html')
 
-@app.route('/templates/A2Z')
+@app.route('/templates/A2Z_1.html')
 def A2Z():
     url = 'https://raw.githubusercontent.com/HayesAJ83/SurgicalEps_01/main/Eponyms4python_Lite.csv'
     df1 = pd.read_csv(url, dtype={'PMID':str,'Year':int})
