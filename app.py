@@ -8,7 +8,7 @@ def index():
     return render_template('index.html')
 
 @app.route('/A2Z_1')
-def A2Z():
+def A2Z_1():
     url = 'https://raw.githubusercontent.com/HayesAJ83/SurgicalEps_01/main/Eponyms4python_Lite.csv'
     df1 = pd.read_csv(url, dtype={'PMID':str,'Year':int})
     df2 = df1.sort_values(by=['Eponym'],ascending=True)
