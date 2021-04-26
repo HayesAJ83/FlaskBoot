@@ -13,4 +13,3 @@ numpy
 matplotlib
 plotly
 requests
-gulp
